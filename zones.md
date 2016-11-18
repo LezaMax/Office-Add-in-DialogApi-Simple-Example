@@ -35,7 +35,7 @@ Often times, the easiest way to resolve this issue is to add the domain of the a
 5. Try to use the add-in again. If the problem persist you may need to verify the settings of all other security zones and ensure the add-in domain is on the same zone as the URL that is displayed in your addressbar for the office application.
 
 ###Developers: Use displayInFrame
-The issue depicted in this article only occurs when the Dialog API is used in pop-up mode. Use the displayInFrame flag to avoid hitting this complication. This alternative does require your page to support being displayed inside and IFrame. Here is an example of the code a developer could use:
+The issue depicted in this article only occurs when the [Dialog API](https://dev.office.com/reference/add-ins/shared/officeui.displaydialogasync) is used in pop-up mode. Use the [displayInFrame](https://dev.office.com/reference/add-ins/shared/officeui.displaydialogasync) flag to avoid hitting this complication. This alternative does require your page to support being displayed inside and IFrame. Here is an example of the code a developer could use:
 
 ```
 Office.context.ui.displayDialogAsync(startAddress, {displayInFrame:true}, callback);
